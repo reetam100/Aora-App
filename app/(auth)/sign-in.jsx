@@ -10,6 +10,7 @@ import { Link } from "expo-router";
 const SignIn = () => {
   const [form, setForm] = useState({
     email: "",
+    password: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -19,13 +20,13 @@ const SignIn = () => {
   return (
     <SafeAreaView className="bg-primary h-full">
       <ScrollView>
-        <View className="w-full justify-center h-full  px-4 my-6">
+        <View className="w-full justify-center min-h-[85vh] px-4 my-6">
           <Image
             source={images.logo}
             resizeMode="contain"
             className="w-[115px] h-[35px]"
           />
-          <Text className="text-2xl text-white text-semibold mt-10 font-semibold">
+          <Text className="text-2xl text-white text-semibold mt-10 font-semibold mb-5">
             Log in to Aura
           </Text>
           <FormField
