@@ -25,7 +25,7 @@ const SignIn = () => {
     setIsSubmitting(true);
     try {
       const result = await signIn(form.email, form.password);
-
+      console.log(result);
       // set it to global state...
 
       router.replace("/home");
